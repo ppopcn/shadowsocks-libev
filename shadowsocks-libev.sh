@@ -258,7 +258,7 @@ pre_install(){
     # Set shadowsocks-libev config port
     while true
     do
-    dport=$(shuf -i 9000-19999 -n 1)
+    dport=8989
     echo -e "Please enter a port for shadowsocks-libev [1-65535]"
     read -p "(Default port: ${dport}):" shadowsocksport
     [ -z "$shadowsocksport" ] && shadowsocksport=${dport}
